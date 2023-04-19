@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .btn{
+        @apply bg-green-600 py-2 px-4 rounded-lg inline-block font-semibold border border-green-600 hover:bg-transparent hover:text-green-600 transition duration-300
+    }
+}
+
+@layer base{
+    .categorySlider .swiper-button-prev ,
+    .categorySlider .swiper-button-next{
+        @apply bg-green-600 text-white top-[96%] md:top-[90%] w-[46px] rounded-full z-20 
+    } 
+    .categorySlider .swiper-button-prev {
+        @apply left-[35%] md:left-[40%] lg:left-[45%]
+    }
+    .categorySlider .swiper-button-next {
+        @apply right-[35%] md:right-[40%] lg:right-[45%]
+    }
+    .categorySlider .swiper-button-prev::after ,
+    .categorySlider .swiper-button-next::after{
+        @apply  text-lg
+    }
+}
